@@ -76,7 +76,7 @@ export default {
 
     scriptId: 'gtm-script',
     scriptDefer: false,
-    scriptURL: 'https://www.googletagmanager.com/gtm.js',
+    scriptURL: 'https://www.googletagmanager.com/gtag/js',
     crossOrigin: false,
 
     noscript: true,
@@ -153,7 +153,7 @@ The default event name for page views is `nuxtRoute`, you can change it by setti
 You can push events into the configured layer:
 
 ```js
-this.$gtm.push({ event: 'myEvent', ...someAttributes })
+this.$gtm.push( 'event', 'myEvent', { someAttributes: 'val' })
 ```
 
 ## Development
